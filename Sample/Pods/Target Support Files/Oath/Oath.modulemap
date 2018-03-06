@@ -1,0 +1,6 @@
+framework module Oath {
+  umbrella header "Oath-umbrella.h"
+
+  export *
+  module * { export * }
+}

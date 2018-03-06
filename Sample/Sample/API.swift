@@ -62,7 +62,7 @@
 //
 
 import Foundation
-import iPromise
+import Oath
 
 fileprivate let Server: [String: JSON] = [
     "user": ["name": "Elias", "gender": "male"]

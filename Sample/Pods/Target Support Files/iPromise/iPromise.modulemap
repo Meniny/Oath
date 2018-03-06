@@ -1,6 +1,0 @@
-framework module iPromise {
-  umbrella header "iPromise-umbrella.h"
-
-  export *
-  module * { export * }
-}

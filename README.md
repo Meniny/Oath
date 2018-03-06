@@ -1,7 +1,7 @@
 
 <p align="center">
-  <!-- <img src="./Assets/iPromise.png" alt="iPromise"> -->
-  <br/><a href="https://cocoapods.org/pods/iPromise">
+  <!-- <img src="./Assets/Oath.png" alt="Oath"> -->
+  <br/><a href="https://cocoapods.org/pods/Oath">
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-brightgreen.svg">
   <img alt="Author" src="https://img.shields.io/badge/author-Meniny-blue.svg">
   <img alt="Build Passing" src="https://img.shields.io/badge/build-passing-brightgreen.svg">
@@ -18,7 +18,9 @@
 
 ## 🏵 Introduction
 
-**iPromise** is a `Promise` / `Future` concept implementation for Swift developing.
+**Oath** is a `Promise` / `Future` concept implementation for Swift developing.
+
+Learn [more](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) about `Promise`.
 
 ## 📋 Requirements
 
@@ -29,11 +31,11 @@
 
 ## 📲 Installation
 
-`iPromise` is available on [CocoaPods](https://cocoapods.org):
+`Oath` is available on [CocoaPods](https://cocoapods.org):
 
 ```ruby
 use_frameworks!
-pod 'iPromise'
+pod 'Oath'
 ```
 
 ## ❤️ Contribution
@@ -42,7 +44,7 @@ You are welcome to fork and submit pull requests.
 
 ## 🔖 License
 
-`iPromise` is open-sourced software, licensed under the `MIT` license.
+`Oath` is open-sourced software, licensed under the `MIT` license.
 
 ## 💫 Usage
 

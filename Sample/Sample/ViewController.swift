@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import iPromise
+import Oath
 
 class ViewController: UIViewController {
 

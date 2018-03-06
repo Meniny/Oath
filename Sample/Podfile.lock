@@ -1,16 +1,16 @@
 PODS:
-  - iPromise (1.0.0)
+  - Oath (1.0.0)
 
 DEPENDENCIES:
-  - iPromise (from `../`)
+  - Oath (from `../`)
 
 EXTERNAL SOURCES:
-  iPromise:
+  Oath:
     :path: ../
 
 SPEC CHECKSUMS:
-  iPromise: 6a23ed65c7ee104c59bbabaa0da5893aa5b1d17c
+  Oath: 99d01125749ba6ac85b1bda473bad9673125a7dd
 
-PODFILE CHECKSUM: d454626ddaaf82d63d6f62b29c13f28b9ea5fea3
+PODFILE CHECKSUM: dad8bde725f8b67db2d525bb7cbf3912ebe64884
 
 COCOAPODS: 1.4.0

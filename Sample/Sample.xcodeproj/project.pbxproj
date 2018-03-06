@@ -34,7 +34,7 @@
 		6418F7A4204E8AFC00930196 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6418F7A5204E8AFC00930196 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = ../LICENSE.md; sourceTree = "<group>"; };
 		6418F7A6204E8AFD00930196 /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; name = ".swift-version"; path = "../.swift-version"; sourceTree = "<group>"; };
-		6418F7A7204E8AFD00930196 /* iPromise.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = iPromise.podspec; path = ../iPromise.podspec; sourceTree = "<group>"; };
+		6418F7A7204E8AFD00930196 /* Oath.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = Oath.podspec; path = ../Oath.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6418F7A8204E8C7D00930196 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		F2CBDE8F0B791C754AB73B29 /* Pods-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sample/Pods-Sample.debug.xcconfig"; sourceTree = "<group>"; };
 		FD8BEE8A81F3F2E72AC523AD /* Pods_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,7 +67,7 @@
 				6418F7A1204E8AFC00930196 /* _config.yml */,
 				6418F7A3204E8AFC00930196 /* .gitignore */,
 				6418F7A6204E8AFD00930196 /* .swift-version */,
-				6418F7A7204E8AFD00930196 /* iPromise.podspec */,
+				6418F7A7204E8AFD00930196 /* Oath.podspec */,
 				6418F7A5204E8AFC00930196 /* LICENSE.md */,
 				6418F7A2204E8AFC00930196 /* Package.swift */,
 				6418F7A4204E8AFC00930196 /* README.md */,
@@ -189,11 +189,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Sample/Pods-Sample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/iPromise/iPromise.framework",
+				"${BUILT_PRODUCTS_DIR}/Oath/Oath.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iPromise.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Oath.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -386,7 +386,7 @@
 				DEVELOPMENT_TEAM = 63YL5QDMNS;
 				INFOPLIST_FILE = Sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.meniny.iPromise.Sample;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.meniny.Oath.Sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -402,7 +402,7 @@
 				DEVELOPMENT_TEAM = 63YL5QDMNS;
 				INFOPLIST_FILE = Sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.meniny.iPromise.Sample;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.meniny.Oath.Sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
