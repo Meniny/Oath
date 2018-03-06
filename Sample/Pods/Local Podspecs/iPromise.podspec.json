@@ -1,0 +1,25 @@
+{
+  "name": "iPromise",
+  "version": "1.0.0",
+  "summary": "Promise / Future concept implementation for Swift developing.",
+  "homepage": "https://github.com/Meniny/iPromise",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE.md"
+  },
+  "authors": "Elias Abel",
+  "source": {
+    "git": "https://github.com/Meniny/iPromise.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "8.0",
+    "osx": "10.10",
+    "tvos": "9.0"
+  },
+  "social_media_url": "https://meniny.cn/",
+  "source_files": "iPromise/*.swift",
+  "requires_arc": true,
+  "description": "Promise / Future concept implementation for Swift developing makes async code readable by a human being",
+  "module_name": "iPromise"
+}

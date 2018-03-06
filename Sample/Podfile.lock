@@ -1,0 +1,16 @@
+PODS:
+  - iPromise (1.0.0)
+
+DEPENDENCIES:
+  - iPromise (from `../`)
+
+EXTERNAL SOURCES:
+  iPromise:
+    :path: ../
+
+SPEC CHECKSUMS:
+  iPromise: 6a23ed65c7ee104c59bbabaa0da5893aa5b1d17c
+
+PODFILE CHECKSUM: d454626ddaaf82d63d6f62b29c13f28b9ea5fea3
+
+COCOAPODS: 1.4.0
