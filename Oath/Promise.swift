@@ -13,7 +13,7 @@ public class Promise<T> {
     
     internal var numberOfRetries: UInt = 0
 
-    private let lockQueue = DispatchQueue(label: "com.freshOS.then.lockQueue", qos: .userInitiated)
+    private let lockQueue = DispatchQueue(label: "cn.meniny.oath.lockQueue", qos: .userInitiated)
     
     private var threadUnsafeState: PromiseState<T>
     internal var state: PromiseState<T> {
@@ -45,7 +45,7 @@ public class Promise<T> {
         threadUnsafeState = .dormant
     }
     
-    public init(_ value: T) {
+    public init(value: T) {
         threadUnsafeState = .fulfilled(value: value)
     }
     
@@ -59,7 +59,7 @@ public class Promise<T> {
     public typealias CallbackClosure = (_ resolve: @escaping GenericClosure, _ reject: @escaping ErrorClosure) -> Void
     public typealias ProgressCallbackClosure = (_ resolve: @escaping GenericClosure, _ reject: @escaping ErrorClosure, _ progress: @escaping ProgressClosure) -> Void
 
-    public convenience init(_ callback: @escaping CallbackClosure) {
+    public convenience init(callback: @escaping CallbackClosure) {
         self.init()
         promiseProgressCallBack = { resolve, reject, progress in
             callback({ [weak self] t in
@@ -70,7 +70,7 @@ public class Promise<T> {
         }
     }
     
-    public convenience init(_ callback: @escaping ProgressCallbackClosure) {
+    public convenience init(callback: @escaping ProgressCallbackClosure) {
         self.init()
         promiseProgressCallBack = { resolve, reject, progress in
             callback(self.fulfill, self.reject, self.setProgress)

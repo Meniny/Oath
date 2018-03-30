@@ -24,8 +24,8 @@ extension Promises {
         // .barrier blocks concurrency so that we can write values
         // without then beeing read at the same time.
         // It pauses reads until write are done
-        let concurentQueue = DispatchQueue(label: "then.zip.concurrent", attributes: .concurrent)
-        let localQueue = DispatchQueue(label: "then.zip.local", attributes: .concurrent)
+        let concurentQueue = DispatchQueue(label: "cn.meniny.oath.zip.concurrent", attributes: .concurrent)
+        let localQueue = DispatchQueue(label: "cn.meniny.oath.zip.local", attributes: .concurrent)
         
         group.enter()
         concurentQueue.async {

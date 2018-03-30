@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name             = 'Oath'
   s.module_name      = 'Oath'
   s.author           = 'Elias Abel'
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "Promise / Future concept implementation for Swift developing."
   s.description      = "Promise / Future concept implementation for Swift developing makes async code readable by a human being."
   s.license          = { :type => "MIT", :file => "LICENSE.md" }
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target  = '10.10'
   s.tvos.deployment_target = '9.0'
 
-  s.swift_version    = '4.0'
+  s.swift_version    = '4.1'
   s.requires_arc     = true
   s.source_files     = "Oath/*.swift"
 end

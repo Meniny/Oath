@@ -12,7 +12,7 @@ import Dispatch
 @discardableResult
 public func async<T>(block:@escaping () throws -> T) -> Async<T> {
     let p = Promise<T> { resolve, reject in
-        DispatchQueue(label: "then.async.queue", attributes: .concurrent).async {
+        DispatchQueue(label: "cn.meniny.oath.async.queue", attributes: .concurrent).async {
             do {
                 let t = try block()
                 resolve(t)

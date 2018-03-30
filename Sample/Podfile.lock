@@ -1,5 +1,5 @@
 PODS:
-  - Oath (1.0.0)
+  - Oath (1.0.1)
 
 DEPENDENCIES:
   - Oath (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  Oath: 99d01125749ba6ac85b1bda473bad9673125a7dd
+  Oath: 743c909e26afd1851eb07ca863433862067221d3
 
 PODFILE CHECKSUM: dad8bde725f8b67db2d525bb7cbf3912ebe64884
 

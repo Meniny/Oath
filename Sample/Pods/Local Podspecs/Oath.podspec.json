@@ -2,7 +2,7 @@
   "name": "Oath",
   "module_name": "Oath",
   "authors": "Elias Abel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": "Promise / Future concept implementation for Swift developing.",
   "description": "Promise / Future concept implementation for Swift developing makes async code readable by a human being.",
   "license": {
@@ -11,7 +11,7 @@
   },
   "source": {
     "git": "https://github.com/Meniny/Oath.git",
-    "tag": "1.0.0"
+    "tag": "1.0.1"
   },
   "homepage": "https://github.com/Meniny/Oath",
   "social_media_url": "https://meniny.cn/",
@@ -20,7 +20,7 @@
     "osx": "10.10",
     "tvos": "9.0"
   },
-  "swift_version": "4.0",
+  "swift_version": "4.1",
   "requires_arc": true,
   "source_files": "Oath/*.swift"
 }
