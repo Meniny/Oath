@@ -3,19 +3,19 @@
 //  Oath
 //
 //  Created by Elias Abel on 20/02/2017.
-//  Copyright © 2017 Meniny Lab. All rights reserved.
+//  Copyright © 2017 Bushtit Lab. All rights reserved.
 //
 
 import Foundation
 
 public extension Promise {
-    public class func reject(_ error: Error = PromiseError.default) -> Promise<T> {
+    class func reject(_ error: Error = PromiseError.default) -> Promise<T> {
         return Promise { _, reject in reject(error) }
     }
 }
 
 public extension Promise {
-    public class func resolve(_ value: T) -> Promise<T> {
+    class func resolve(_ value: T) -> Promise<T> {
         return Promise { resolve, _ in resolve(value) }
     }
 }
@@ -28,11 +28,11 @@ extension Promise where T == Void {
 
 public extension Promise {
     
-    public var value: T? {
+    var value: T? {
         return state.value
     }
     
-    public var error: Error? {
+    var error: Error? {
         return state.error
     }
 }

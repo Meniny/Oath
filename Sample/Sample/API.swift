@@ -58,7 +58,7 @@
 //  total_hours_wasted_here = 0
 //
 //  Created by Elias Abel on 2018/3/6.
-//  Copyright © 2018年 Meniny Lab. All rights reserved.
+//  Copyright © 2018年 Bushtit Lab. All rights reserved.
 //
 
 import Foundation

@@ -3,7 +3,7 @@
 //  Oath
 //
 //  Created by Sacha DSO on 27/09/2017.
-//  Copyright © 2017 Meniny Lab. All rights reserved.
+//  Copyright © 2017 Bushtit Lab. All rights reserved.
 //
 
 import Foundation
@@ -24,7 +24,7 @@ extension Promise where T == Void {
     }
     
     public convenience init(void callback2: @escaping (
-        _ resolve: @escaping (() -> Void),
+        _ resolve: @escaping ((T) -> Void),
         _ reject: @escaping ((Error) -> Void),
         _ progress: @escaping ((Float) -> Void)) -> Void) {
         self.init()

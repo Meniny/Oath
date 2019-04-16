@@ -3,14 +3,15 @@
 //  Oath
 //
 //  Created by Elias Abel on 20/02/2017.
-//  Copyright © 2017 Meniny Lab. All rights reserved.
+//  Copyright © 2017 Bushtit Lab. All rights reserved.
 //
 
 import Foundation
 
 public extension Promise {
     
-    @discardableResult public func progress(_ block: @escaping (Float) -> Void) -> Promise<T> {
+    @discardableResult
+    func progress(_ block: @escaping (Float) -> Void) -> Promise<T> {
         tryStartInitialPromiseAndStartIfneeded()
         let p = newLinkedPromise()
         syncStateWithCallBacks(

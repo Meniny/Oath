@@ -3,7 +3,7 @@
 //  Oath
 //
 //  Created by Elias Abel on 26/10/16.
-//  Copyright © 2016 Meniny Lab. All rights reserved.
+//  Copyright © 2016 Bushtit Lab. All rights reserved.
 //
 
 import Foundation

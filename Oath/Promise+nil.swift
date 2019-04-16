@@ -3,7 +3,7 @@
 //  Oath
 //
 //  Created by Sacha DSO on 31/01/2018.
-//  Copyright © 2018 Meniny Lab. All rights reserved.
+//  Copyright © 2018 Bushtit Lab. All rights reserved.
 //
 
 import Foundation

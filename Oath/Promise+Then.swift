@@ -3,20 +3,22 @@
 //  Oath
 //
 //  Created by Elias Abel on 20/02/2017.
-//  Copyright © 2017 Meniny Lab. All rights reserved.
+//  Copyright © 2017 Bushtit Lab. All rights reserved.
 //
 
 import Foundation
 
 public extension Promise {
     
-    @discardableResult public func then<X>(_ block: @escaping (T) -> X) -> Promise<X> {
+    @discardableResult
+    func then<X>(_ block: @escaping (T) -> X) -> Promise<X> {
         let p = registerThen(block)
         tryStartInitialPromiseAndStartIfneeded()
         return p
     }
     
-    @discardableResult public func registerThen<X>(_ block: @escaping (T) -> X) -> Promise<X> {
+    @discardableResult
+    func registerThen<X>(_ block: @escaping (T) -> X) -> Promise<X> {
         let p = Promise<X>()
         switch state {
         case let .fulfilled(value):
@@ -39,12 +41,14 @@ public extension Promise {
         return p
     }
     
-    @discardableResult public func then<X>(_ block: @escaping (T) -> Promise<X>) -> Promise<X> {
+    @discardableResult
+    func then<X>(_ block: @escaping (T) -> Promise<X>) -> Promise<X> {
         tryStartInitialPromiseAndStartIfneeded()
         return registerThen(block)
     }
     
-    @discardableResult  public func registerThen<X>(_ block: @escaping (T) -> Promise<X>)
+    @discardableResult
+    func registerThen<X>(_ block: @escaping (T) -> Promise<X>)
         -> Promise<X> {
             let p = Promise<X>()
             switch state {
@@ -66,11 +70,13 @@ public extension Promise {
             return p
     }
     
-    @discardableResult public func then<X>(_ promise: Promise<X>) -> Promise<X> {
+    @discardableResult
+    func then<X>(_ promise: Promise<X>) -> Promise<X> {
         return then { _ in promise }
     }
     
-    @discardableResult public func registerThen<X>(_ promise: Promise<X>) -> Promise<X> {
+    @discardableResult
+    func registerThen<X>(_ promise: Promise<X>) -> Promise<X> {
         return registerThen { _ in promise }
     }
     

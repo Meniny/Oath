@@ -3,14 +3,14 @@
 //  Oath
 //
 //  Created by Elias Abel on 13/03/2017.
-//  Copyright © 2017 Meniny Lab. All rights reserved.
+//  Copyright © 2017 Bushtit Lab. All rights reserved.
 //
 
 import Foundation
 
 public extension Promise {
     
-    public func chain(_ block:@escaping (T) -> Void) -> Promise<T> {
+    func chain(_ block:@escaping (T) -> Void) -> Promise<T> {
         let p = newLinkedPromise()
         syncStateWithCallBacks(success: { t in
             block(t)
